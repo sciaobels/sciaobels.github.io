@@ -1,0 +1,10 @@
+:root {
+  --primary-bg-color: black;
+  --primary-bg-gradient: rgba(0, 0, 0, 0.7);
+  --secondary-bg-color: #cacaca;
+  --primary-text-color: white;
+  --secondary-text-color: lightgray;
+  --link-color: #4da3ff;
+  --link-hover-color: #7bbcff;
+  --link-visited-color: #a78bfa;
+}

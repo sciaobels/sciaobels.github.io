@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="../../style/colors.css" rel="stylesheet">
+    <link href="../../style/style.css" rel="stylesheet">
+</head>
+  <body class="container-fluid p-0">
+    <div class="sticky-top container-nav"> <!--Navbar-->
+        <nav class="navbar navbar-expand-lg m-0 p-0">
+            <div class="container-fluid mx-3 buttons">
+                <a class="navbar-brand cliccable-nav px-3 active" href="../../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link cliccable-nav px-3" aria-current="page" href="../presentazione.html">Presentazione</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link cliccable-nav px-3" aria-current="page" href="../pcto.html">PCTO</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link cliccable-nav px-3" aria-current="page" href="../progetti.html">Progetti</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link cliccable-nav px-3" aria-current="page" href="../educazioneCivica.html">Educazione civica</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link cliccable-nav px-3" aria-current="page" href="../certificazioni.html">Certificazioni</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle cliccable-nav px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Materie
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><p class="dropdown-item mb-1">Materie letterarie</p></li>
+                        <li><a class="dropdown-item cliccable" href="inglese.html">Inglese</a></li>
+                        <li><a class="dropdown-item cliccable" href="italiano.html">Italiano</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><p class="dropdown-item mb-1">Materie d'indirizzo</p></li>
+                        <li><a class="dropdown-item cliccable current-page" href="informatica.html">Informatica</a></li>
+                        <li><a class="dropdown-item cliccable" href="sistemi.html">Sistemi</a></li>
+                        <li><a class="dropdown-item cliccable" href="tpsit.html">TPSIT</a></li>
+                        <li><a class="dropdown-item cliccable" href="gpoi.html">GPOI</a></li>
+                        <li><a class="dropdown-item cliccable" href="ia.html">Intelligenza artificiale</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="sfondo-header" style="height: 50vh;"> <!--Header-->
+        <div class="d-flex justify-content-center align-items-center h-100 gradient-header">
+            <div class="header">
+                <h1>
+                    Informatica
+                </h1>
+                <h2>
+                    Web service
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center content flex-column"> <!--Content-->
+        
+        <div class="row container-fluid">
+            <div class="col col-text align-items-center">
+                <h2>Web service con REST API</h2>
+                <p class="content-text">Un web serice è un sistema che permette a due applicazioni di comunicare tra loro tramite internet.<br>
+                    Sono basati su un modello client-server: un'app richiede dati e un'altra app risponde.<br><br>
+                    Abbiamo implementato dei servizi web tramite REST API.<br>
+                    REST sta per Representational State Transfer, utilizza il protocollo HTTP e organizza i dati in risorse. Utilizza i metodi standard dell'HTTP: GET, POST, PUT, DELETE...<br>
+                    Ogni risorse viene identificata da un URL, per esempio "/users" potrebbe fornire un elenco degli utenti, "/users/5" indica l'utente con ID 5.<br>
+                    Come HTTP anche REST è stateless, cioè ogni richiesta è indipendente. Per identificare gli utenti vengono utilizzati token e cookies.
+                </p>
+            </div>
+            <div class="col image-container">
+                <img class="img-fluid image" src="../../images/api.jpg">
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="row container-fluid">
+            <div class="col col-text align-items-center">
+                <h2>Vantaggi dell'utilizzo di web service</h2>
+                <p class="content-text"> L'utilizzo di web service porta più vantaggi:</p>
+                <ul class="content-text">
+                    <li>Scalabilità più facile: se aumenta il traffico basta potenziare un singolo servizio</li>
+                    <li>Manutenzione più semplice: avere componenti più piccoli rende facile effettuare modifiche e aggiornamenti</li>
+                    <li>Sviluppo più veloce: avere diversi team organizzati permette di sviluppare più parti del software in parallelo</li>
+                    <li>Maggiore affidabilità: se uno dei servizi smette di funzionare il resto dell'applicazione rimane operativa</li>
+                    <li>Aggiornamenti più sicuri: non serve fermare l'intera applicazione per aggiornare un singolo servizio</li>
+                </ul>
+            </div>
+            <div class="col image-container">
+                <img class="img-fluid image" src="../../images/mvw.webp">
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        
+    </div>
+
+
+
+    <footer>
+        
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
