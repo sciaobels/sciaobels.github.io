@@ -164,3 +164,14 @@ footer{
 .image-container{
     text-align: center;
 }
+
+.menu-non-cliccabile{
+    color: var(--secondary-bg-color);
+}
+.menu-non-cliccabile:active{
+    background-color: rgba(255, 255, 255, 0);
+    color:var(--secondary-bg-color);
+}
+.menu-non-cliccabile:hover{
+    color:var(--secondary-bg-color);
+}

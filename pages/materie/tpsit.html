@@ -38,11 +38,11 @@
                         Materie
                     </a>
                     <ul class="dropdown-menu">
-                        <li><p class="dropdown-item mb-1">Materie letterarie</p></li>
+                        <li><p class="dropdown-item mb-1 menu-non-cliccabile">Materie letterarie</p></li>
                         <li><a class="dropdown-item cliccable" href="inglese.html">Inglese</a></li>
                         <li><a class="dropdown-item cliccable" href="italiano.html">Italiano</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><p class="dropdown-item mb-1">Materie d'indirizzo</p></li>
+                        <li><p class="dropdown-item mb-1 menu-non-cliccabile">Materie d'indirizzo</p></li>
                         <li><a class="dropdown-item cliccable" href="informatica.html">Informatica</a></li>
                         <li><a class="dropdown-item cliccable" href="sistemi.html">Sistemi</a></li>
                         <li><a class="dropdown-item cliccable current-page" href="tpsit.html">TPSIT</a></li>
@@ -76,24 +76,61 @@
         <div class="row container-fluid">
             <div class="col col-text align-items-center">
                 <h2>Concorrenza dei processi</h2>
-                <p class="content-text">La concorrenza dei processi è un concetto fondamentale dell’informatica che riguarda l’esecuzione di più attività nello stesso intervallo di tempo. In un sistema moderno, più processi o thread possono avanzare "in parallelo" oppure alternarsi rapidamente nell’uso della CPU, dando l’impressione di simultaneità.</p>
+                <p class="content-text">La concorrenza dei processi è un concetto fondamentale dell'informatica che riguarda l'esecuzione di più attività nello stesso intervallo di tempo. In un sistema moderno, più processi o thread possono avanzare "in parallelo" oppure alternarsi rapidamente nell'uso della CPU, dando l'impressione di simultaneità.</p>
             </div>
             <div class="col image-container">
-                <img class="img-fluid image" src="../../images/">
+                <img class="img-fluid image" src="../../images/concorrenza.png">
             </div>
         </div>
 
         <div class="separator"></div>
 
+        <div class="row container-fluid">
+            <div class="col col-text align-items-center">
+                <h2>La differenza tra concorrenza e parallelismo</h2>
+                <p class="content-text">
+                    La concorrenza riguarda la gestione simultanea di più attivita, anche su una sola CPU. In questo caso il sistema operativo alterna rapidamente i processi tramite l'operazione di context switching.<br>
+                    Il parallelismo avviene quando più processi sono veramente eseguiti nello stesso istante su processori con più core o addirittura più processori.<br>
+                    In sostanza il parallelismo implica sempre concorrenza, ma la concorrenza non implica sempre parallelismo.
+                </p>
+            </div>
+            <div class="col image-container">
+                <img class="img-fluid image" src="../../images/concorrenza-parallelismo.png">
+            </div>
+        </div>
 
+        <div class="separator"></div>
 
+        <div class="row container-fluid">
+            <div class="col col-text align-items-center">
+                <h2>I problemi della concorrenza</h2>
+                <p class="content-text">
+                    Con l'utilizzo della concorrenza solgono molti problemi, tra cui le race conditions, i deadlocks e le starvations.<br>
+                    In sostanza la race condition avviene quando due processi tentano di accedere contemporaneamente allo stesso dato condiviso, il risultato dell'operazione diventa imprevedibile in quanto dipende dall'ordine di accesso alla risorsa dei processi.<br>
+                    Il deadlock o stallo si verifica quando più processi aspettano indefinitivamente di avere accesso ad una risorsa bloccata da un altro processo.<br>
+                    La starvation avviene quando un processo non riesce ad accedere ad una risorsa perché ha priorità più bassa degli altri, che non lasciano tempo ad esso di effettuare le proprie operazioni.
+                </p>
+            </div>
+            <div class="col image-container">
+                <img class="img-fluid image" src="../../images/deadlock.webp">
+            </div>
+        </div>
+
+        
      
     </div>
 
 
 
     <footer>
-        
+        <div class="row">
+            <div class="col">
+                <h3>Contatti</h3>
+                <a class="link" href="mailto:st10934@iismarconipieralisi.it">st10934@iismarconipieralisi.it</a><br>
+                <a class="link" href="mailto:angelopaonnewm@gmail.com">angelopaonnewm@gmail.com</a>
+            </div>
+            <div class="col"></div>
+        </div>
     </footer>
 
 
