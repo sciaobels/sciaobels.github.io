@@ -175,3 +175,6 @@ footer{
 .menu-non-cliccabile:hover{
     color:var(--secondary-bg-color);
 }
+.show{
+    color: white !important;
+}
